@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Launcher Universal</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.png">
+  <meta name="theme-color" content="#0b1226" />
+  <meta name="description" content="Launcher Universal - catalogo e instalador de apps" />
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="root" class="app-root">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="logo-icon" id="logoIcon">◼</div>
+        <div class="brand-text">
+          <div class="brand-title">Launcher</div>
+          <div class="brand-sub">Universal</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button data-cat="all" class="nav-btn active">Inicio</button>
+        <button data-cat="Games" class="nav-btn">Juegos</button>
+        <button data-cat="Tools" class="nav-btn">Herramientas</button>
+        <button data-cat="Editors" class="nav-btn">Editores</button>
+        <button data-cat="settings" class="nav-btn">Ajustes</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button id="themeToggle" class="small-btn">Modo oscuro</button>
+        <div id="userArea"></div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <header class="topbar">
+        <div class="searchbox">
+          <input id="searchInput" placeholder="Buscar apps, juegos..." />
+        </div>
+        <div class="action-area">
+          <button id="refreshBtn" class="small-btn">Recargar</button>
+          <button id="loginBtn" class="small-btn">Iniciar sesión</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div id="grid" class="grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modals -->
+  <div id="modal" class="modal hidden"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

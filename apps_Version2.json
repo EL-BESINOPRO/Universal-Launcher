@@ -1,0 +1,50 @@
+[
+  {
+    "id": "roblox",
+    "name": "Roblox",
+    "description": "Plataforma con millones de juegos creados por la comunidad.",
+    "category": "Games",
+    "icon": "/icons/roblox.png",
+    "size_bytes": 120000000,
+    "tags": ["multiplayer","kids"],
+    "platforms": {
+      "windows": { "installer_url": "https://example.com/installers/roblox_installer.exe", "exe_path": "C:\\Program Files\\Roblox\\RobloxPlayer.exe" },
+      "android": { "playstore_url": "https://play.google.com/store/apps/details?id=com.roblox.client", "deep_link": "robloxmobile://launch" },
+      "ios": { "app_store_url": "https://apps.apple.com/app/roblox/id431946152" },
+      "web": { "url": "https://www.roblox.com" }
+    }
+  },
+  {
+    "id": "roblox-studio",
+    "name": "Roblox Studio",
+    "description": "Herramienta para crear experiencias en Roblox.",
+    "category": "Editors",
+    "icon": "/icons/roblox-studio.png",
+    "platforms": {
+      "windows": { "installer_url": "https://example.com/installers/robloxstudio_installer.exe" }
+    }
+  },
+  {
+    "id": "free-fire",
+    "name": "Free Fire",
+    "description": "Battle royale para móviles.",
+    "category": "Games",
+    "icon": "/icons/freefire.png",
+    "platforms": {
+      "android": { "playstore_url": "https://play.google.com/store/apps/details?id=com.dts.freefireth" },
+      "ios": { "app_store_url": "https://apps.apple.com/app/free-fire/id1300146617" }
+    }
+  },
+  {
+    "id": "minecraft",
+    "name": "Minecraft",
+    "description": "Construye, explora y sobrevive.",
+    "category": "Games",
+    "icon": "/icons/minecraft.png",
+    "platforms": {
+      "android": { "playstore_url": "https://play.google.com/store/apps/details?id=com.mojang.minecraftpe" },
+      "ios": { "app_store_url": "https://apps.apple.com/app/minecraft/id479516143" },
+      "windows": { "installer_url": "https://launcher.mojang.com/download/MinecraftInstaller.msi" }
+    }
+  }
+]
